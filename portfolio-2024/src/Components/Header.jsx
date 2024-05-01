@@ -50,7 +50,7 @@ const Header = () => {
   };
 
   return (
-    <div className="z-20 flex flex-col fixed left-0 right-0 top-0 w-full px-8 md:px-20 lg:px-40">
+    <div className="max-w-[1120px] fixed  top-0 w-full px-8">
       <div className="flex justify-end items-center py-8">
         <div className="buttonsContainer">
           <BurgerBtn handleClick={toggleClick} isClicked={isClicked} />

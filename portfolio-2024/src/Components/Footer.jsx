@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       {" "}
-      <div className="pb-20 flex z-10 gap-4">
+      <div className=" max-w-[1120px] w-full pb-20 pt-40 flex z-10 gap-4">
         <div className="flex flex-col gap-2">
           <h2 className="text-Accent text-3xl">Let´s talk</h2>
 

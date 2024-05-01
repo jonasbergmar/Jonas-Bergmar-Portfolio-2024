@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="  flex flex-col min-h-screen gap-8 bg-Background px-8 md:px-20 lg:px-40">
+      <div className="w-full  flex flex-col items-center min-h-screen gap-8 bg-Background px-8 md:px-20 lg:px-40">
         <Header />
         <Routes>
           <Route
