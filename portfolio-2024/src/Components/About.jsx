@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <div className=" relative">
-        <div className="absolute top-0 left-0 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-Background/40 rounded-full"></div>
+        <div className="absolute top-0 left-0  bg-Background/40 rounded-full"></div>
 
         <img
           className=" object-cover w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full z-20"
@@ -12,8 +12,8 @@ const About = () => {
           alt="about image"
         />
       </div>
-      <div className=" flex flex-col gap-8 items-start lg:flex-row justify-between w-full">
-        <div className="w-1/3">
+      <div className=" flex flex-col gap-8 items-start lg:flex-row lg:justify-between w-full">
+        <div className="lg:w-1/3">
           <h1 className=" text-Accent">So... Who Am I?</h1>
           <p className=" text-TextVariant">
             I´m a cheerful guy who loves food, tech, and gaming. I´m passionate
@@ -22,7 +22,7 @@ const About = () => {
             well-versed in teamwork and small team management.
           </p>
         </div>
-        <div className="w-1/3">
+        <div className="lg:w-1/3">
           <h1 className=" text-Accent">Education</h1>
           <p className=" text-TextVariant">
             Currently, I´m studying UI/UX design at Chas Academy, where we´re
@@ -31,7 +31,7 @@ const About = () => {
             features to improve my work.
           </p>
         </div>
-        <div className="w-1/3">
+        <div className="lg:w-1/3">
           <h1 className=" text-Accent">Skills</h1>
           <p className=" text-TextVariant">
             During my studies, I´ve learned about user research, market

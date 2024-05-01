@@ -20,10 +20,11 @@ const Hero = ({ display, display2 }) => {
       <div className="flex flex-row justify-start pb-1 md:w-[600px] lg:w-[800px]">
         <div>
           <h1 className="box text-Accent text-5xl md:text-6xl lg:text-8xl">
-            {display}
+            Hello!
           </h1>
           <h2 className="box text-Primary text-4xl md:text-5xl lg:text-7xl">
-            {display2}
+            My Name Is Jonas. <br />A UI/UX Designer <br />
+            From Stockholm, Sweden.
           </h2>
         </div>
       </div>

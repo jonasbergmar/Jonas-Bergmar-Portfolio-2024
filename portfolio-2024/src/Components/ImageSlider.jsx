@@ -41,10 +41,10 @@ const ImageSlider = ({ images }) => {
 
   return (
     <>
-      <div className="max-w-[1120px] h-[500px]  items-center justify-center rounded-3xl group bg-gradient-to-tr from-bg-white/10 to-bg-white/05">
+      <div className="bg-gradient-to-tr from-Accent/15 to-white/5 max-w-[1120px] w-full h-[500px] flex items-center justify-center rounded-3xl group p-4 overflow-hidden">
         <div className="relative overflow-hidden rounded-2xl">
           <div
-            className="  flex transition-transform"
+            className="flex transition-transform group-hover:opacity-100"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {images.map((image, index) => (
@@ -52,28 +52,28 @@ const ImageSlider = ({ images }) => {
                 key={index}
                 src={image}
                 alt={`Slide ${index + 1}`}
-                className=" h-[500px] object-scale-down w-full flex-shrink-0"
+                className="object-scale-down max-h-[500px] w-full flex-shrink-0"
               />
             ))}
           </div>
           <button
-            className="  absolute top-1/2 left-2 transform -translate-y-1/2 bg-TextVariant/20 rounded-full border-none text-Accent  text-2xl p-3 focus:outline-none"
+            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-Background/70 rounded-full border-none text-Accent text-2xl p-3 focus:outline-none opacity-0 group-hover:opacity-100"
             onClick={prevSlide}
           >
             <BsChevronLeft />
           </button>
           <button
-            className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-TextVariant/20 rounded-full border-none text-Accent text-2xl p-3 focus:outline-none"
+            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-Background/70 rounded-full border-none text-Accent text-2xl p-3 focus:outline-none opacity-0 group-hover:opacity-100"
             onClick={nextSlide}
           >
             <BsChevronRight />
           </button>
-          <div className="flex justify-center items-center mt-2 absolute bottom-0 left-0 right-0">
+          <div className="flex justify-center items-center absolute bottom-[10px] left-0 right-0">
             {images.map((_, index) => (
               <span
                 key={index}
                 className={`w-2 h-2 mx-1 bg-gray-500 rounded-full cursor-pointer ${
-                  index === currentIndex ? " bg-white w-3 h-3" : ""
+                  index === currentIndex ? " bg-Primary w-3 h-3" : ""
                 }`}
                 onClick={() => goToSlide(index)}
               ></span>
