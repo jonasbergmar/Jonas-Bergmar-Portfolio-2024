@@ -52,7 +52,7 @@ const ImageSlider = ({ images }) => {
                 key={index}
                 src={image}
                 alt={`Slide ${index + 1}`}
-                className="object-scale-down max-h-[500px] w-full flex-shrink-0"
+                className="object-scale-down h-[500px] w-full flex-shrink-0"
               />
             ))}
           </div>
