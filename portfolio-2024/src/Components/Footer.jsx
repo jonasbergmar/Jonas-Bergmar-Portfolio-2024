@@ -4,9 +4,17 @@ const Footer = () => {
   return (
     <>
       {" "}
-      <div className=" justify-between max-w-[1120px] w-full pb-20 pt-40 flex z-10 gap-4">
-        <div className="flex items-center just gap-4">
-          <div className="flex flex-col gap-2">
+      <div className=" flex-col justify-between md:flex-row md:items-end max-w-[1120px] w-full pb-20 pt-40 flex z-10 gap-4">
+        <div className="fle flex-col just gap-4">
+          <div className="flex flex-col gap-4">
+            <div className="relative">
+              <div className="absolute top-0 left-0 w-24 h-24 bg-Background/20 rounded-full"></div>
+              <img
+                className="w-24 h-24 rounded-full"
+                src={logo}
+                alt="profilePicture"
+              />
+            </div>
             <h2 className="text-Accent text-3xl">Let´s talk</h2>
 
             <a
@@ -22,18 +30,10 @@ const Footer = () => {
               <i className="fab fa-linkedin"></i> LinkedIn
             </a>
           </div>
-          <div className="relative">
-            <div className="absolute top-0 left-0 w-24 h-24 bg-Background/20 rounded-full"></div>
-            <img
-              className="w-24 h-24 rounded-full"
-              src={logo}
-              alt="profilePicture"
-            />
-          </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <h3 className="text-Primary text-xl">Created with:</h3>
-          <div className="flex gap-4">
+        <div className="flex flex-col  gap-4">
+          <h3 className="text-Accent text-lg">Site is reated with:</h3>
+          <div className="flex flex-wrap gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
